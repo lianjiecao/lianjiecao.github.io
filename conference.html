@@ -59,17 +59,17 @@
     <p id="journal"></p>
 
 <script>
-var fruits, text;
-fruits = ["Banana", "Orange", "Apple", "Mango"];
+    var fs=require('fs');
+    var data=fs.readFileSync('conference.json', 'utf8');
+    var conf=JSON.parse(data);
+    var text = "<ul>";
+    conf.forEach(genTable);
+    text += "</ul>";
+    document.getElementById("journal").innerHTML = text;
 
-text = "<ul>";
-fruits.forEach(myFunction);
-text += "</ul>";
-document.getElementById("journal").innerHTML = text;
-
-function myFunction(value) {
-  text += "<li>" + value + "</li>";
-} 
+    function genTable(value) {
+        text += "<li>" + value.name + "</li>";
+    }
 </script>
 
     </body>

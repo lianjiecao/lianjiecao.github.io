@@ -6,7 +6,7 @@
     </head>
 
     <body>
-    <h1>2014 Networking Conferences</h1><br/>
+    <h1>Conferences</h1><br/>
 
     <a href="#osdi">OSDI</a>,
     <a href="#sigcomm">SIGCOMM</a>,
@@ -23,7 +23,7 @@
 
 
     <hr>
-
+    <p id="conf">
     <center>
     <TABLE BORDER=1 ALIGN=CENTER WIDTH=1000>
     <TR BORDER=1 BGCOLOR="#CF7C00">
@@ -53,10 +53,24 @@
     </tr>
     <td> Concise paper: <a href="http://icnp14.cs.unc.edu/cfp.html">May 23rd</a>
 
-
-
     </table></center>
 
+    </p>
+    <p id="journal"></p>
+
+<script>
+var fruits, text;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+document.getElementById("journal").innerHTML = text;
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+} 
+</script>
 
     </body>
 </html>

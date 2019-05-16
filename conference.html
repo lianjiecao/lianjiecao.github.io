@@ -21,7 +21,7 @@
     <p></p>
     <br>
 
-
+<!--
     <hr>
     <p id="conf">
     <center>
@@ -54,9 +54,9 @@
     <td> Concise paper: <a href="http://icnp14.cs.unc.edu/cfp.html">May 23rd</a>
 
     </table></center>
-
+-->
     </p>
-    <p id="journal"></p>
+    <p id="conference"></p>
     <div id="example-table" align="center" style="width:750"></div>
 
     <script type="text/javascript" src="conf_data.json"></script>
@@ -70,12 +70,13 @@
             '<th> <font color="white"><b>Full Paper<b></font>' +
             '<th> <font color="white"><b>Review<b></font>' +
             '<th> <font color="white"><b>Pages<b></font>' +
+	    '<th> <font color="white"><b>Venue<b></font>' +
             '</tr>'
 
         confTable = "<table border=1 align=center width=600>" + tableHdr;
         confData.forEach(genTable);
         confTable += "</table>";
-        document.getElementById("journal").innerHTML = confTable;
+        document.getElementById("conference").innerHTML = confTable;
 
         function genTable(value) {
             confTable += "<tr>"
@@ -84,36 +85,29 @@
             confTable += "<td>" + value.full + "</td>";
             confTable += "<td>" + value.notif + "</td>";
             confTable += "<td>" + value.page + "</td>";
-
+            confTable += "<td>" + value.venue + "</td>";
             confTable += "</tr>"
         }
-    var tabledata = [
-        {id:1, name:"Oli Bob", age:"12", col:"red", dob:""},
-        {id:2, name:"Mary May", age:"1", col:"blue", dob:"14/05/1982"},
-        {id:3, name:"Christine Lobowski", age:"42", col:"green", dob:"22/05/1982"},
-        {id:4, name:"Brendon Philips", age:"125", col:"orange", dob:"01/08/1980"},
-        {id:5, name:"Margret Marmajuke", age:"16", col:"yellow", dob:"31/01/1999"},
-    ];
 
-var table = new Tabulator("#example-table", {
- 	//height:205, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
-//    width: 800,
- 	data:confData, //assign data to table
- 	layout:"fitColumns", //fit columns to width of table (optional)
- 	columns:[ //Define Table Columns
-	 	{title:"Name", field:"name", width:100},
+        var table = new Tabulator("#example-table", {
+ 	    //height:205, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
+            //width: 800,
+ 	    data:confData, //assign data to table
+ 	    layout:"fitColumns", //fit columns to width of table (optional)
+ 	    columns:[ //Define Table Columns
+                {title:"Name", field:"name", width:100},
 	 	{title:"Year", field:"url", align:"left", formatter:"link", formatterParams:{labelField:"year"}, width:80},
 	 	{title:"Full Paper", field:"full", width:100},
 	 	{title:"Review", field:"notif", sorter:"date", align:"center", width:100},
 	 	{title:"Conference", field:"conf", sorter:"date", align:"center", width:120},
 	 	{title:"Pages", field:"page", width:100},
 	 	{title:"Venue", field:"venue", width:150},
- 	],
+ 	    ],
 // 	rowClick:function(e, row){ //trigger an alert message when the row is clicked
 // 		alert("Row " + row.getData().id + " Clicked!!!!");
 // 	},
 
-});
+        });
 
     </script>
 

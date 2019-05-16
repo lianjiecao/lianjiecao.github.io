@@ -1,9 +1,15 @@
 var confData = 
 [
-{"name":"SIGCOMM","year":"2019", "url":"https://conferences.sigcomm.org/sigcomm/2019/cfp.html", "abstract":"Jan. 24, 2019", "full":"Jan. 31, 2019","notif":"May 10, 2019", "conf":"Aug. 19, 2019", "page":"12", "venue":"Beijing, China"},
-{"name":"CoNEXT","year":"2019", "url":"https://conferences2.sigcomm.org/co-next/2019/#!/home", "abstract":"June 19, 2019", "full":"June 26, 2019","notif":"Sep. 10, 2019", "conf":"Dec. 9, 2019", "page":"6/12", "venue":"Orlando, FL"},
+{"name":"ATC","year":"2019", "url":"https://www.usenix.org/conference/atc19", "abstract":"", "full":"Jan. 10, 2019","notif":"April 16, 2019", "conf":"July 10, 2019", "page":"5/11", "venue":"Renton, WA"},
+{"name":"ICDCS","year":"2019", "url":"https://theory.utdallas.edu/ICDCS2019/index.html", "abstract":"Jan. 5, 2019", "full":"Jan. 12, 2019","notif":"March 28th, 2019", "conf":"July 10, 2019", "page":"10", "venue":"Dallas, TX"},
+{"name":"SIGCOMM","year":"2019", "url":"https://conferences.sigcomm.org/sigcomm/2019/cfp.html", "abstract":"Jan. 24, 2019", "full":"Jan. 31, 2019","notif":"May 10, 2019", "conf":"Aug. 19, 2019", "page":"12", "venue":"Beijing, CN"},
+{"name":"HotCloud","year":"2019", "url":"https://www.usenix.org/conference/hotcloud19", "abstract":"", "full":"March 12, 2019","notif":"April 17, 2019", "conf":"July 8, 2019", "page":"5", "venue":"Renton, WA"},
+{"name":"IMC","year":"2019", "url":"https://conferences.sigcomm.org/imc/2019/", "abstract":"May 6, 2019", "full":"May 13, 2019 ","notif":"July 19, 2019", "conf":"Oct. 21, 2019", "page":"6/13", "venue":"Amsterdam, NL"},
 {"name":"ICNP","year":"2019", "url":"https://icnp19.cs.ucr.edu/", "abstract":"May 24, 2019", "full":"May 31, 2019","notif":"July 26, 2019", "conf":"Oct. 7, 2019", "page":"10", "venue":"Chicago, IL"},
 {"name":"SoCC","year":"2019", "url":"https://acmsocc.github.io/2019/index.html", "abstract":"June 03, 2019", "full":"June 10, 2019","notif":"Sep. 02, 2019", "conf":"Nov. 20, 2019", "page":"12", "venue":"Santa Cruz, CA"},
-{"name":"HotNets","year":"2019", "url":"https://conferences.sigcomm.org/hotnets/2019/index.html", "abstract":"June 24, 2019", "full":"June 28, 2019","notif":"Sep. 17, 2019", "conf":"Nov. 13, 2019", "page":"6", "venue":"Princeton, NJ"},
-{"name":"","year":"", "url":"", "abstract":"", "full":"","notif":"", "conf":"", "page":"", "venue":""}
+{"name":"CoNEXT","year":"2019", "url":"https://conferences2.sigcomm.org/co-next/2019/#!/home", "abstract":"June 19, 2019", "full":"June 26, 2019","notif":"Sep. 10, 2019", "conf":"Dec. 9, 2019", "page":"6/12", "venue":"Orlando, FL"},
+  {"name":"HotNets","year":"2019", "url":"https://conferences.sigcomm.org/hotnets/2019/index.html", "abstract":"June 24, 2019", "full":"June 28, 2019","notif":"Sep. 17, 2019", "conf":"Nov. 13, 2019", "page":"6", "venue":"Princeton, NJ"},
+{"name":"INFOCOM","year":"2020", "url":"", "abstract":"", "full":"July 31, 2019","notif":"", "conf":"", "page":"", "venue":"Beijing, CN"},
+  {"name":"ANCS","year":"2019", "url":"http://www.ancsconf.org/", "abstract":"", "full":"","notif":"", "conf":"", "page":"", "venue":"Cambridge, UK"},
+{"name":"","year":"", "url":"", "abstract":"", "full":"","notif":"", "conf":"", "page":"", "venue":""},
 ];

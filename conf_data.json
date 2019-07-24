@@ -9,7 +9,8 @@ var confData =
 {"name":"SoCC","year":"2019", "abstract":"June 03, 2019", "full":"June 10, 2019","notif":"Sep. 02, 2019", "conf":"Nov. 20, 2019", "page":"12", "venue":"Santa Cruz, CA", "url":"https://acmsocc.github.io/2019/index.html"},
 {"name":"CoNEXT","year":"2019", "abstract":"June 19, 2019", "full":"June 26, 2019","notif":"Sep. 10, 2019", "conf":"Dec. 9, 2019", "page":"6/12", "venue":"Orlando, FL", "url":"https://conferences2.sigcomm.org/co-next/2019/#!/home"},
 {"name":"HotNets","year":"2019", "abstract":"June 24, 2019", "full":"June 28, 2019","notif":"Sep. 17, 2019", "conf":"Nov. 13, 2019", "page":"6", "venue":"Princeton, NJ", "url":"https://conferences.sigcomm.org/hotnets/2019/index.html"},
-{"name":"INFOCOM","year":"2020", "abstract":"", "full":"July 31, 2019","notif":"", "conf":"", "page":"", "venue":"Beijing, CN", "url":""},
+{"name":"INFOCOM","year":"2020", "abstract":"July 24, 2019", "full":"July 31, 2019","notif":"Dec. 14, 2019", "conf":"Apr. 27, 2020", "page":"9", "venue":"Beijing, CN", "url":"https://infocom2020.ieee-infocom.org/call-papers-main-conference"},
 {"name":"ANCS","year":"2019", "abstract":"", "full":"","notif":"", "conf":"", "page":"", "venue":"Cambridge, UK", "url":"http://www.ancsconf.org/"},
+{"name":"NSDI","year":"2020", "abstract":"Sep. 12, 2019", "full":"Sep. 19, 2019","notif":"Dec. 13, 2019", "conf":"Feb. 25, 2020", "page":"12", "venue":"Santa Clara, CA", "url":"https://www.usenix.org/conference/nsdi20/call-for-papers"},
 {"name":"","year":"", "abstract":"", "full":"","notif":"", "conf":"", "page":"", "venue":"", "url":""},
 ];

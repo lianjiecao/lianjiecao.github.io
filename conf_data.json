@@ -12,5 +12,7 @@ var confData =
 {"name":"INFOCOM","year":"2020", "abstract":"July 24, 2019", "full":"July 31, 2019","notif":"Dec. 14, 2019", "conf":"Apr. 27, 2020", "page":"9", "venue":"Beijing, CN", "url":"https://infocom2020.ieee-infocom.org/call-papers-main-conference"},
 {"name":"ANCS","year":"2019", "abstract":"", "full":"","notif":"", "conf":"", "page":"", "venue":"Cambridge, UK", "url":"http://www.ancsconf.org/"},
 {"name":"NSDI","year":"2020", "abstract":"Sep. 12, 2019", "full":"Sep. 19, 2019","notif":"Dec. 13, 2019", "conf":"Feb. 25, 2020", "page":"12", "venue":"Santa Clara, CA", "url":"https://www.usenix.org/conference/nsdi20/call-for-papers"},
+{"name":"Middleware","year":"", "abstract":"", "full":"","notif":"", "conf":"", "page":"", "venue":"", "url":""},
+{"name":"VEE","year":"2020", "abstract":"Nov. 30, 2019", "full":"Dec. 6, 2019","notif":"Jan. 28, 2020", "conf":"Mar. 17, 2020", "page":"12", "venue":"Lausanne, Switzerland", "url":"https://conf.researchr.org/home/vee-2020#Call-for-Papers"},
 {"name":"","year":"", "abstract":"", "full":"","notif":"", "conf":"", "page":"", "venue":"", "url":""},
 ];

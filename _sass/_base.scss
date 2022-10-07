@@ -248,7 +248,7 @@ blockquote {
 .social {
   text-align: center;
   .contact-icons {
-    font-size: 4rem;
+    font-size: 3rem;
     a {
       i::before {
         color: var(--global-text-color);
@@ -296,6 +296,7 @@ footer.sticky-bottom {
 
 .cv {
   margin-bottom: 40px;
+  // font-size: 0.75rem;
   
   .card {
     background-color: var(--global-card-bg-color);

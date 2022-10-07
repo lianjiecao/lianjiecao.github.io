@@ -1,0 +1,35 @@
+
+          <div class="experience">
+            <h2>Experience</h2>
+            {% if site.experience != blank -%} 
+            {%- assign exp_size = site.experience | size -%}
+            <div class="table-responsive" style="max-height: 50vw">
+              <table class="table table-sm table-borderless">
+              {%- assign experience = site.experience | reverse -%}
+              {% if site.exp_limit %}
+              {% assign exp_limit = site.exp_limit %}
+              {% else %}
+              {% assign exp_limit = exp_size %}
+              {% endif %}
+              {% for item in experience limit: exp_limit %}
+                <tr>
+                  <!-- <th scope="row">{{ item.date }}</th> -->
+                  
+                  <td style="text-align:center">
+                    <img src={{ item.image }} alt="" height=60></img>
+                  </td>
+                  <td style="vertical-align:middle">
+                    <big><b>{{ item.title }}</b></big><br>
+                    {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                  </td>
+                  <!-- <td>
+                    {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                </td> -->
+                </tr>
+              {%- endfor %}
+              </table>
+            </div>
+          {%- else -%}
+            <p>No experience so far...</p>
+          {%- endif %}
+          </div>

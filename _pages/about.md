@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Researcher@<a href='https://www.hpe.com/us/en/hewlett-packard-labs.html'>Hewlett Packard Labs</a>. 
 
@@ -14,12 +14,15 @@ profile:
     <p>Milpitas, CA 95035</p>
 
 news: false  # includes a list of news items
+cv: true
+experience: false # include a list of experiences
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
 Lianjie is a researcher at Network and Distributed Systems Labs (NDSL) of [Hewlett Packard Labs](https://www.hpe.com/us/en/hewlett-packard-labs.html). 
 He received his Ph.D. degree from [Computer Science department at Purdue University](https://www.cs.purdue.edu/) with [Professor Sonia Fahmy](https://www.cs.purdue.edu/homes/fahmy/).
+
 His research interests mainly focus on resource allocation and performance optimization of computer networks, distributed systems, and storage systems. 
 He has worked on network emulation, network functions virtualization (NFV), serverless computing, microservices, machine learning systems, and persistent memory.
 

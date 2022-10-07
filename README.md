@@ -149,6 +149,50 @@ Neural Compression (ICLR: <a href="https://neuralcompression.github.io/" target=
     + [Core Contributors](#core-contributors)
   * [License](#license)
 
+## Modifications
+### Basic structure
+- ```.md``` files in ```_page``` define webpages includes in the site include the layout and some attributes.
+- ```.html``` files in ```_layout``` define how content is displayed for different types of pages.
+- ```.html``` files in ```_include``` define more detailed display modules.
+- ```_data``` includes data entries for cv, coauthors, venues, etc.
+- ```assets``` includes misc file like images, pdf, etc.
+
+### Add new experience collection
+To add experience as a new type of collection similar to news:
+- Create copy ```news.html``` to ```experience.html``` in ```_includes/experience.html``` and change related varable names.
+- Add ```experience``` section to ```collections``` in ```_config.yml```.
+  ```yaml
+  experience:                                                                                                                           
+    defaults:
+      layout: post
+    output: true
+  exp_limit: 10
+  ```
+- Add the following to ```_layouts/about.html``` to change the layout of about:
+  ```html
+  {% if page.experience -%}
+  <!-- Experience -->
+  {%- include experience.html %}
+  {%- endif %}
+  ```
+- Add the following to ```_pages/about.md``` to enable experience section:
+  ```
+  experience: true # include a list of experiences
+  ```
+- Create a new folder of ```_experience``` and md files for each item:
+  ```
+  ---
+  layout: post
+  title: Huazhong University of Science and Technology
+  date: 2008-06-30
+  image: "/assets/img/hust.gif"
+  inline: true
+  ---
+
+  B.E. in Control Science and Technology                                         
+  ```
+
+
 ## Getting started
 
 Want to learn more about Jekyll? Check out [this tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/).

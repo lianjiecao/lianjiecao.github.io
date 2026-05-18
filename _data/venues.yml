@@ -4,3 +4,19 @@
 
 "PhysRev":
   url: https://journals.aps.org/
+
+"NFV-SDN":
+  url: https://conferences.ieee.org/nfv-sdn
+  color: "#0066cc"
+
+"ANCS":
+  url: https://ancs.github.io/
+  color: "#c8553d"
+
+"CoNEXT":
+  url: https://conferences.sigcomm.org/co-next/
+  color: "#2a9d8f"
+
+"MLSys":
+  url: https://mlsys.org/
+  color: "#f4a261"

@@ -11,11 +11,19 @@
           {%- endif -%}
         {%- elsif entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
-            {%- assign venue_style = nil -%}
-            {%- if site.data.venues[entry.abbr].color != blank -%}
-              {%- assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' -%}
+            {%- assign v = site.data.venues[entry.abbr] -%}
+            {%- assign style_parts = '' -%}
+            {%- if v.color and v.color != blank -%}
+              {%- assign style_parts = style_parts | append: 'background-color:' | append: v.color | append: ';' -%}
             {%- endif -%}
-            <abbr class="badge" {% if venue_style %}{{venue_style}}{% endif %}><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+            {%- if v.text_color and v.text_color != blank -%}
+              {%- assign style_parts = style_parts | append: 'color:' | append: v.text_color | append: ';' -%}
+            {%- endif -%}
+            {%- if style_parts != '' -%}
+              <abbr class="badge" style="{{ style_parts }}"><a href="{{ v.url }}" style="color:inherit;text-decoration:none">{{entry.abbr}}</a></abbr>
+            {%- else -%}
+              <abbr class="badge"><a href="{{ v.url }}">{{entry.abbr}}</a></abbr>
+            {%- endif -%}
           {%- else -%}
             <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}

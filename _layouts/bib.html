@@ -29,18 +29,10 @@
         {%- else %}
           <!-- Title -->
           <div class="title">
-            {% if entry.abbr %}
-              {% if site.data.venues[entry.abbr] %}
-                {%- assign venue_style = nil -%}
-                {%- if site.data.venues[entry.abbr].color != blank -%}
-                  {%- assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' -%}
-                {%- endif -%}
-                <a href="{{site.data.venues[entry.abbr].url}}"><span class="venue-abbr badge" {% if venue_style %}{{venue_style}}{% endif %}>{{entry.abbr}}</span></a>&nbsp;
-              {% else %}
-                <span class="venue-abbr">{{entry.abbr}}</span>&nbsp;
-              {% endif %}
-            {% endif %}
             {{ entry.title }}
+            {%- if entry.award -%}
+              <span class="award badge badge-success ml-2">{{ entry.award }}</span>
+            {%- endif -%}
           </div>
           <!-- Author -->
           <div class="author">

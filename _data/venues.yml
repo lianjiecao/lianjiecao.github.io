@@ -1,22 +1,102 @@
-"AJP":
+ "AJP":
   url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+  color: "#7F6B5A"
+  class: venue-ajp
+  text_color: "#ffffff"
 
-"PhysRev":
+ "PhysRev":
   url: https://journals.aps.org/
+  color: "#8C6A55"
+  class: venue-physrev
+  text_color: "#ffffff"
 
-"NFV-SDN":
+ "NFV-SDN":
   url: https://conferences.ieee.org/nfv-sdn
-  color: "#0066cc"
+  color: "#B85C38"
+  class: venue-nfv-sdn
+  text_color: "#ffffff"
 
-"ANCS":
+ "ANCS":
   url: https://ancs.github.io/
-  color: "#c8553d"
+  color: "#6B8A72"
+  class: venue-ancs
+  text_color: "#ffffff"
 
-"CoNEXT":
+ "CoNEXT":
   url: https://conferences.sigcomm.org/co-next/
-  color: "#2a9d8f"
+  color: "#4B7B82"
+  class: venue-conext
+  text_color: "#ffffff"
 
-"MLSys":
+ "MLSys":
   url: https://mlsys.org/
-  color: "#f4a261"
+  color: "#C69C6D"
+  class: venue-mlsys
+  text_color: "#000000"
+
+ "PAM":
+  url: https://pam2013.comp.polyu.edu.hk/
+  color: "#A66E5D"
+  class: venue-pam
+  text_color: "#ffffff"
+
+"HotCloud":
+  url: https://www.usenix.org/conference/hotcloud
+  color: "#9B6F97"
+  class: venue-hotcloud
+  text_color: "#ffffff"
+
+"ICCCN":
+  url: https://ieeexplore.ieee.org/Xplore/home.jsp
+  color: "#8A7F6D"
+  class: venue-icccn
+  text_color: "#ffffff"
+
+"NOMS":
+  url: https://nomsconference.org/
+  color: "#A86A49"
+  class: venue-noms
+  text_color: "#ffffff"
+
+"EdgeSys":
+  url: https://edgesys.github.io/
+  color: "#93785F"
+  class: venue-edgesys
+  text_color: "#ffffff"
+
+"TNSM":
+  url: https://tnsm.ieee.org/
+  color: "#6D6A58"
+  class: venue-tnsm
+  text_color: "#ffffff"
+
+"HotStorage":
+  url: https://hotstorage.github.io/
+  color: "#9E5F63"
+  class: venue-hotstorage
+  text_color: "#ffffff"
+
+"EMS":
+  url: ""
+  color: "#7B6EA3"
+  class: venue-ems
+  text_color: "#ffffff"
+
+"ATC":
+  url: https://www.usenix.org/conference/atc
+  color: "#D09E4A"
+  class: venue-atc
+  text_color: "#000000"
+
+"TMLCN":
+  url: ""
+  color: "#6B8CA3"
+  class: venue-tmlcn
+  text_color: "#ffffff"
+
+"SYSTOR":
+  url: https://systor.org/
+  color: "#866A9A"
+  class: venue-systor
+  text_color: "#ffffff"
+

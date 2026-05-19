@@ -20,20 +20,9 @@
               {%- assign style_parts = style_parts | append: 'color:' | append: v.text_color | append: ';' -%}
             {%- endif -%}
             {%- if style_parts != '' -%}
-              {%- comment -%} append !important to each declaration to override theme CSS {%- endcomment -%}
-              {%- assign important_style = style_parts | replace: ';', ' !important;' -%}
-              {%- unless important_style contains '!' -%}{% endif %}
-              {%- if v.url and v.url != '' -%}
-                <abbr class="badge" style="{{ important_style }}"><a href="{{ v.url }}" style="color:inherit;text-decoration:none">{{entry.abbr}}</a></abbr>
-              {%- else -%}
-                <abbr class="badge" style="{{ important_style }}">{{entry.abbr}}</abbr>
-              {%- endif -%}
+              <abbr class="badge" style="{{ style_parts }}"><a href="{{ v.url }}" style="color:inherit;text-decoration:none">{{entry.abbr}}</a></abbr>
             {%- else -%}
-              {%- if v.url and v.url != '' -%}
-                <abbr class="badge"><a href="{{ v.url }}">{{entry.abbr}}</a></abbr>
-              {%- else -%}
-                <abbr class="badge">{{entry.abbr}}</abbr>
-              {%- endif -%}
+              <abbr class="badge"><a href="{{ v.url }}">{{entry.abbr}}</a></abbr>
             {%- endif -%}
           {%- else -%}
             <abbr class="badge">{{entry.abbr}}</abbr>
